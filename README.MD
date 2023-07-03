@@ -1,7 +1,7 @@
 <!--
  * @Author: Gulai
  * @Date: 2023-07-03 22:42:03
- * @LastEditTime: 2023-07-03 23:54:41
+ * @LastEditTime: 2023-07-04 00:21:25
  * @Description: 笔记https://appjiz2zqrn2142.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/video/v_638072cfe4b0fc5d120a24cf
  * @FilePath: \react-mono-repo\README.MD
 -->
@@ -54,3 +54,9 @@
   - perf: 性能方面的优化
   - refactor: 代码重构
   - test: 添加一些测试代码等等
+- 配置 ts 配置，新建 tsconfig.json
+- 比较不同打包工具的区别 [参考资料：Overview | Tooling.Report](https://bundlers.tooling.report/) 我们要开发的项目的特点：
+  - 是库，而不是业务项目
+  - 希望工具尽可能简洁、打包产物可读性高
+  - 原生支持 ESM
+  - 该项目为一个库，不是业务项目，需要尽可能简洁（配置，产物可读性等）所以选择 rollup，安装：`pnpm i -D -w rollup`
