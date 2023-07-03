@@ -1,0 +1,3 @@
+packages:
+  # 意思是根目录下的packages目录下的直接文件就是Mono-repo的子项目,所有的项目都会在packages下
+  - 'packages/*'

@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    // 一些默认的规则合集
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    // 如何解析代码，默认解析js，此处需要解析ts
+    "parser": "@typescript-eslint/parser",
+    // 解析的目标代码
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    // 规则合集
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    //具体规则
+    "rules": {
+        "prettier/prettier": "error",
+        "no-case-declarations": "off",
+        "no-constant-condition": "off",
+        "@typescript-eslint/ban-ts-comment": "off"
+    }
+}
